@@ -12,28 +12,30 @@
     <div class="container">
         <nav>
             <img src="/images/logo.png" class="" alt="">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fas solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Composer / Sound Designer</p>
-            <h1>Hi, I'm <span>Pablo Wunderlich</span><br>from Dallas,Tx</h1>
+            <p>Video Game Music Composer & Sound Designer</p>
+            <h1>Hi, I'm <span>Pablo Wunderlich</span><br>from Tx,USA</h1>
         </div>
     </div>
 </div>
 
-<!---------------about------------->
+<hr>
 
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png" alt="">
+                <img src="images/aboutme-image.jpeg" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -45,17 +47,17 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Sonic Skills and Composition<br></span>Recording Foley and other sounds, processing them, mixing and mastering sounds.</li>
-                        <li><span>Sonic Skills and Composition<br></span>Mixing and Mastering Engineer graduated from Mixing And Mastering Academy (MAAT).</li>
+                        <li><span>Sonic Skills and Composition<br></span>Recording Foley and other sounds, processing them,<br>mixing and mastering sounds.</li>
+                        <li><span>Sonic Skills and Composition<br></span>Mixing and Mastering Engineer graduated from Mixing<br>And Mastering Academy (MAAT).</li>
                         <li><span>Technical Sound Design<br></span>Wwise/C#/Blueprints</li>
                         <li><span>Technical Sound Design<br></span>FMOD/C#</li>
-                        <li><span>Software Skills<br></span>Nuendo DAW, Reaper DAW, WaveLab Mastering Suite Spectral Layers, FMOD, Davinci Resolve</li>
+                        <li><span>Software Skills<br></span>Nuendo DAW, Reaper DAW, WaveLab Mastering Suite<br>Spectral Layers, FMOD, Davinci Resolve</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>2023 - DDLstudios<br></span>1st place Game Jam Lead Sound Design Finalist for Lost Striders</li>
-                        <li><span>2023<br></span>Designer for sfx and the interactive music on Boss Rush game jam (20th place of 3,000)</li>
+                        <li><span>2023 - DDLstudios<br></span>1st place Game Jam Lead Sound Design Finalist<br>for Lost Striders</li>
+                        <li><span>2023<br></span>Designer for sfx and the interactive music on Boss Rush<br>game jam (20th place of 3,000)</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -70,7 +72,7 @@
     </div>
 </div>
 
-<!----------------services-->
+<hr>
 
 <div id="services">
     <div class="container">
@@ -78,26 +80,79 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-microphone"></i>
-                <h2>Sound Design</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis itaque voluptate, corrupti beatae fugiat quibusdam facilis magnam quasi quas voluptatem quaerat ex maiores minus aut id aliquid iste illo.</p>
+                <h2>Sound Design & Technical Sound Design</h2>
+                <p>I have a passion to bring worlds to life using designed and custom sounds. I’ll record foley and process it to create tailored audio for your game. I will then implement the sounds into FMOD or Wwise.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-music"></i>
-                <h2>Music Composition</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis itaque voluptate, corrupti beatae fugiat quibusdam facilis magnam quasi quas voluptatem quaerat ex maiores minus aut id aliquid iste illo.</p>
+                <h2>Music Composition & Production</h2>
+                <p>Whether you're looking for a single song or full fledged interactive music for your whole game, I will create a sonic landscape to enhance the game-world experience. I use electric and nylon guitars, electric bass, Moog Synthesizers, and sampled instruments to hand-craft immersive experiences.</p>
                 <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-film"></i>
-                <h2>Trailers</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta nobis itaque voluptate, corrupti beatae fugiat quibusdam facilis magnam quasi quas voluptatem quaerat ex maiores minus aut id aliquid iste illo.</p>
+                <h2>Complete Game Audio and Solutions</h2>
+                <p>Both of the above services at a reduced cost. I will take care of all the audio of your game including music and sound design and its meticulous implementation.</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
     </div>
 </div>
 
+<hr>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Sound Design Demos With Video</h1>
+        <div class="work-list">
+            <div class="work">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KD0AKmhKNWc?si=HFe7Jo6TT0K-7dIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="work">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZIiNq1VXRt4?si=YbuzCtQtxktIlZIZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="work">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1oF8LzWY0Wc?si=hB5bPZKrWFVQZmjO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="work">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/n4AxWU-sfHc?si=xLQXqiSURNtO2QU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>music@pablowunderlich.com</p>
+                <p><i class="fa-solid fa-phone"></i>(123)-2345-234</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/wundermusik" rel="noopener noreferrer nofollow" 
+                    target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/pablo_wunderlich/" rel="noopener noreferrer nofollow" 
+                    target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/pablo-wunderlich-666010256/" rel="noopener noreferrer nofollow" 
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://itch.io/profile/pablowunderlich" rel="noopener noreferrer nofollow" 
+                    target="_blank"><i class="fa-brands fa-itch-io"></i></i></a>
+                </div>
+            <a href="" class="btn btn2" onclick="window.open('images/Pablo_Wunderlich_CV 2.docx.pdf')">Download CV</a></div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pablo, Made by Odie Creative Media</p>
+    </div>
+</div>
 <script>
 
     var tablinks = document.getElementsByClassName('tab-links')
@@ -111,6 +166,18 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
     }
 
 </script>
