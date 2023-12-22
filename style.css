@@ -234,7 +234,7 @@ hr {
 
 .work-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -250,6 +250,10 @@ hr {
     border-radius: 10px;
     display: block;
     
+}
+
+.centered {
+    text-align: center;
 }
 
 
@@ -447,6 +451,15 @@ nav .fas{
         width: 300px;
     }
 
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1207px){
     .work-list{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
