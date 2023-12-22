@@ -43,7 +43,7 @@
                 <img src="images/aboutme-image.jpeg" alt="">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
+                <h1 class="sub-title lighter-text">About Me</h1>
                 <p>I'm Pablo Wunderlich, a game audio aficionado running on thick coffee. I love all aspects of game audio--from the sound design, to the music, all the way to its implementation. If you're looking for a one-stop shop to take care of your game audio look no further. I can implement sounds with C# scripts, Wwise, or FMOD.</p>
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -81,7 +81,7 @@
 
 <div id="services">
     <div class="container">
-        <h1 class="sub-title centered">My Services</h1>
+        <h1 class="sub-title centered lighter-text">My Services</h1>
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-microphone"></i>
@@ -90,7 +90,6 @@
                     <li>Sound effects creation.</li>
                     <li>Sound design and audio design.</li>
                 </ul>
-                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-music"></i>
@@ -102,7 +101,6 @@
                     <li>Musical composition for linear or interactive media.
                     </li>
                 </ul>
-                <a href="#">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-film"></i>
@@ -112,7 +110,6 @@
                     <li>VO editing.</li>
                     <li>Sound systems creation for games.</li>
                 </ul>
-                <a href="#">Learn more</a>
             </div>
         </div>
     </div>
@@ -122,7 +119,7 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title centered">Sound Design Demos With Video</h1>
+        <h1 class="sub-title centered lighter-text">Sound Design Demos With Video</h1>
         <div class="work-list">
             <div class="work">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/KD0AKmhKNWc?si=HFe7Jo6TT0K-7dIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -159,12 +156,13 @@
                 </div>
             <a href="" class="btn btn2" onclick="window.open('images/Pablo_Wunderlich_CV 2.docx.pdf')">Download CV</a></div>
             <div class="contact-right">
-                <form>
-                    <input type="text" name="name" placeholder="Your name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -187,6 +185,25 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2F5Rkev0_JpsbmvdZBuRvZ_xA374vSDbLnvRDmTt3X0LTeJdQvW2y2v7cWyzunii8MA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ''
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 <script>
 

@@ -76,6 +76,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
+
 .header-text h1 span{
     color: #ff0000;
 }
@@ -256,6 +257,10 @@ hr {
     text-align: center;
 }
 
+.lighter-text{
+    font-weight: lighter;
+}
+
 
 /*-----------contact--------*/
 
@@ -333,7 +338,7 @@ form input, form textarea{
     border-radius: 6px;
 }
 
-form btn2{
+form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
@@ -349,6 +354,11 @@ form btn2{
     margin-top: 20px;
 }
 
+#msg{
+    color: #ffffff;
+    margin-top: -40px;
+    display: block;
+}
 
 
 /*----------------Css for small screen -------------*/
