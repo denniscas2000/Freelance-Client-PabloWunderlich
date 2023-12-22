@@ -8,6 +8,11 @@
     <script src="https://kit.fontawesome.com/915fcceb77.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="intro">
+    <h1 class="logo-header">
+        <span class="logo">Pablo :</span><span class="logo"> Sonic Explorer</span>
+    </h1>
+</div>
 <div id="header">
     <div class="container">
         <nav>
@@ -179,6 +184,32 @@
     function closemenu(){
         sidemenu.style.right = "-200px"
     }
+
+    let intro = document.querySelector('.intro');
+    let logo = document.querySelector('.logo-header');
+    let logoSpan = document.querySelectorAll('.logo');
+
+    window.addEventListener('DOMContentLoaded', ()=>{
+        setTimeout(()=>{
+            logoSpan.forEach((span, idx)=>{
+                setTimeout(()=>{
+                    span.classList.add('active')
+                }, (idx + 1) * 400)
+            })
+            setTimeout(()=>{
+                logoSpan.forEach((span, idx)=>{
+                    setTimeout(()=>{
+                        span.classList.remove('active');
+                        span.classList.add('fade');
+                    }, (idx + 1)* 50)
+                })
+            },2000);
+
+            setTimeout(()=>{
+                intro.style.top = '-100vh';
+            }, 2300)
+        })
+    })
 
 </script>
 </body>
