@@ -9,14 +9,14 @@
 </head>
 <body>
 <div class="intro">
+    <element onload="myScript"></element>
     <h1 class="logo-header">
         <span class="logo">Pablo :</span><span class="logo"> game_audio pro</span>
-        <audio autoplay>
-            <source src="/sound/intro.mp3" type="audio/mp3">
-            Your browser does not support the audio tag.
-          </audio>
     </h1>
 </div>
+<audio autoplay>
+    <source src="/sound/intro.mp3" type="audio/mpeg">
+  </audio>
 <div id="header">
     <div class="container">
         <nav>
@@ -30,7 +30,7 @@
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Reels</a>
                     <div class="dropdown-content">
-                        <a href="#">Unity</a>
+                        <a href="/unreal.html">Unity</a>
                         <a href="#">Unreal</a>
                         <a href="#">Godot</a>
                         <a href="#">FMOD</a>
@@ -197,6 +197,7 @@
         <p>Copyright © Pablo, Made by Odie Creative Media</p>
     </div>
 </div>
+
 <script>
     var tablinks = document.getElementsByClassName('tab-links')
     var tabcontents = document.getElementsByClassName('tab-contents')
@@ -229,7 +230,7 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 
 <script>
 
@@ -241,8 +242,10 @@
     function closemenu(){
         sidemenu.style.right = "-200px"
     }
+</script>
 
-    let intro = document.querySelector('.intro');
+<script>
+        let intro = document.querySelector('.intro');
     let logo = document.querySelector('.logo-header');
     let logoSpan = document.querySelectorAll('.logo');
 
