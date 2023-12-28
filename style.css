@@ -653,3 +653,15 @@ nav .fas{
 .animated {
     animation-duration: 1.25s
 }
+
+
+
+.wrapper img {
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.wrapper img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
