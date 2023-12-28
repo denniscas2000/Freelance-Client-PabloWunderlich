@@ -633,3 +633,23 @@ nav .fas{
     transition: backgorund 0.2s;
     background: #ffffff;
 }
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0,100%,0)
+    }
+
+    to {
+        opacity: 1;
+        transform: none
+    }
+}
+
+.animated {
+    animation-duration: 1.25s
+}
