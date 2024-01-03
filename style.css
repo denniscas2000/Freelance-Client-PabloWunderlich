@@ -605,6 +605,7 @@ nav .fas{
   to {top: 0; opacity: 1}
 }
 
+/* Reel Section */
 .btn5{
     display: block;
     margin: 50px auto;
@@ -621,6 +622,7 @@ nav .fas{
     transform: translateY(-10px);
 }
 
+/* Music Page */
 
 .soundcloud-list{
     display: grid;
