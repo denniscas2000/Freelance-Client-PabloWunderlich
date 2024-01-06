@@ -11,7 +11,7 @@
 <div class="intro">
     <element onload="myScript"></element>
     <h1 class="logo-header">
-        <span class="logo">Pablo :</span><span class="logo"> game_audio</span>
+        <button class="logo" id="fsbtn">Fractal Soundwork</button>
     </h1>
 </div>
 <div id="header">
@@ -266,7 +266,19 @@
                     span.classList.add('active')
                 }, (idx + 1) * 400)
             })
-            setTimeout(()=>{
+        })
+    })
+
+</script>
+<script>
+    let fsbtn = document.getElementById("fsbtn")
+    let counter = document.getElementById("counter")
+
+    btn.addEventListener("click", myFunc)
+
+    function myFunc() {
+        
+        setTimeout(()=>{
                 logoSpan.forEach((span, idx)=>{
                     setTimeout(()=>{
                         span.classList.remove('active');
@@ -277,10 +289,9 @@
 
             setTimeout(()=>{
                 intro.style.top = '-100vh';
+                
             }, 2300)
-        })
-    })
-
+    }
 </script>
 <script>
     // Get the modal
