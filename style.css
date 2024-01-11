@@ -323,6 +323,7 @@ hr {
 
 .centered {
     text-align: center;
+    padding: 2rem;
 }
 
 .lighter-text{
@@ -641,6 +642,8 @@ nav .fas{
     flex-wrap: wrap;
 }
 
+
+
 @media only screen and (max-width: 600px){
 
     .soundcloud-list{
@@ -783,6 +786,11 @@ nav .fas{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 40px;
         margin-top: 50px;
+    }
+
+    .video-settings{
+        width: 100%;
+        height: auto;
     }
 }
 
