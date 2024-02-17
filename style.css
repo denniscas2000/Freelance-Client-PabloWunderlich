@@ -414,6 +414,10 @@ form .btn2{
     cursor: pointer;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 .copyright{
     width: 100%;
     text-align: center;
